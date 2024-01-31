@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Encryption/Decryption Tool</h2>
+        <p>Welcome to the Encryption/Decryption Tool. This tool uses a key to encrypt or decrypt your messages. It's crucial to use the same key for both processes.</p>
+        <p>Use the key to encrypt your message. To decrypt, you must enter the encrypted message and the correct key. If the key is incorrect, decryption will fail.</p>
+
+        <ol>
+            <li><strong>Enter a Key:</strong> Choose a secret word or phrase. Use this key for both encrypting and decrypting messages.</li>
+            <li><strong>Type Your Text:</strong> Input the text you wish to encrypt or decrypt.</li>
+            <li><strong>Encrypt/Decrypt:</strong> Press 'Encrypt' to secure your message, or 'Decrypt' to revert to the original text. Ensure you use the same key used for encryption.</li>
+        </ol>
+        <label for="keyInput">Your Key (required):</label>
+        <input type="text" id="keyInput" placeholder="Secret key..." title="Enter a key to use for encryption/decryption" required autofocus>
+        <label for="inputText">Your Text:</label>
+        <input type="text" id="inputText" placeholder="Text to encrypt or decrypt..." title="Enter text to encrypt or decrypt" required>
+        <button id="encryptBtn">Encrypt</button>
+        <button id="decryptBtn">Decrypt</button>
+        <div id="result" class="result"></div>
+        <div id="history" class="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+input, .result {
+    width: 300px;
+    margin: 10px;
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: lime;
+}
+
+button {
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+}
+
+.result {
+    border: none;
+    text-align: center;
+}
+.history {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
