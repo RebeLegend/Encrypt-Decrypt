@@ -1,5 +1,16 @@
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import sys 
+
+
+# project directory to the sys.path
+project_home = '/home/RebeLegend/Encrypt-Decrypt'
+if project_home not in sys.path:
+    sys.path.append(project_home)
+
+# Set environment variable
+os.environ['FLASK_ENV'] = 'production'
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS on all routes
